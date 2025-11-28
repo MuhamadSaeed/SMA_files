@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+</head>
+<body id="page-root">
+
+    <!-- //nav bar -->
+    <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header id="site-header" class="site-header">
+        <div class="container header-inner">
+            <h1 class="site-title">My Portfolio</h1>
+            <p class="site-tagline">Web developer & designer</p>
+        </div>
+    </header>
+
+
+  <!-- MAIN -->
+    <main id="main-content" class="main-content">
+    <!-- SECTION: home -->
+    <section id="home" class="section home-section">
+        <article id="intro-article" class="article intro">
+            <h2>Welcome</h2>
+            <p>Short introduction about me.</p>
+        </article>
+    </section>
+
+    <!-- SECTION: projects -->
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+
+        <!-- Use a div to group a project card (div is non-semantic) -->
+        <div class="project-card" id="project-1">
+            <h3>Project One</h3>
+            <p>Short project description.</p>
+        </div>
+
+        <!-- Table example inside main (use the structured table from above) -->
+        <div class="table-wrapper">
+        <table class="table" id="projects-table">
+            <caption>Project List</caption>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Website</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>App UI</td>
+                    <td>Design</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="site-footer" class="site-footer">
+        <p>&copy; 2025 My Mohamed</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<form>
+  <fieldset>
+    <legend>Profile & Preferences</legend>
+
+    <!-- url -->
+    <label for="website">Website</label>
+    <input type="url" id="website" placeholder="https://example.com">
+
+    <!-- search -->
+    <label for="search">Search</label>
+    <input type="search" id="search" placeholder="Search...">
+
+    <!-- number -->
+    <label for="age">Age</label>
+    <input type="number" id="age" min="0" max="70" step="2" value="30">
+
+    <!-- range -->
+    <label for="satisfaction">Satisfaction (0-10)</label>
+    <input type="range" id="satisfaction" min="0" max="10" step="1" value="7">
+
+    <!-- color -->
+    <label for="favcolor">Favorite color</label>
+    <input type="color" id="favcolor" value="#ffffff">
+
+    <!-- date -->
+    <label for="birthdate">Birthdate</label>
+    <input type="date" id="birthdate">
+  </fieldset>
+
+  <div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
