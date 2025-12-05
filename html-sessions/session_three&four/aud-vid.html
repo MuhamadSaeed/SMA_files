@@ -7,19 +7,19 @@
 </head>
 <body>
     <!-- audio if first source didnt work, play the next -->
-    <audio controls id="audio2" class="media-audio">
+    <audio controls loop autoplay id="audio2" class="media-audio">
         <source src="https://listen.ourquraan.com/Ahmad_Al-Hawashy/001.mp3" type="audio/mp3">
         <source src="audio/song.ogg" type="audio/ogg">
-        <!-- its appear if the browser didnt play the source  -->
         Your browser does not support the audio element.
     </audio>
 
     <!-- video -->
-    <video controls id="video1" class="media-video" width="480">
-    <source src="metaVerse.mp4" type="video/mp4">
-    <source src="video/movie.webm" type="video/webm">
-    Your browser does not support the video element.
+    <video controls poster="img7.png" loop autoplay id="video1" class="media-video"  width="480">
+        <source src="metaVerse.mp4" type="video/mp4">
+        <source src="video/movie.webm" type="video/webm">
+        Your browser does not support the video element.
     </video>
+
 
 </body>
 </html>

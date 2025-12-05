@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practice page demonstrating core HTML tags, semantic elements, lists, tables and forms.">
+  <title>HTML Full Example - Practice Page</title>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" title="Go to homepage">MySite</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="home" class="site-main">
+    <!-- Hero / headings -->
+    <section class="hero">
+      <h1 class="main-title">Welcome to the HTML Practice Page</h1>
+      <h2>Learn HTML — Core tags & semantics</h2>
+      <p>Use this page to see examples of common HTML tags and attributes. <!-- HTML comment example --></p>
+      <p>Some HTML entities: &copy; 2025 &nbsp; &lt; &gt; &amp;</p>
+      <hr>
+    </section>
+
+    <!-- Example of semantic grouping -->
+    <section id="about" class="about">
+      <header>
+        <h3>About this Example</h3>
+      </header>
+      <article class="about-article">
+        <p>This article demonstrates <strong>semantic</strong> elements such as <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code>. Use <em>em</em> when you want emphasis and <small>small</small> for fine print.</p>
+
+        <!-- Inline vs block example -->
+        <div class="inline-vs-block">
+          <p>Here is a <span class="inline-example">span (inline)</span> inside a paragraph.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Lists -->
+    <section class="lists">
+      <h3>Lists</h3>
+
+      <h4>Unordered list</h4>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h4>Ordered list</h4>
+      <ol>
+        <li>Open your editor</li>
+        <li>Write HTML</li>
+        <li>Save and refresh</li>
+      </ol>
+
+      <h4>Nested list (example: recipe)</h4>
+      <ul>
+        <li>Prepare ingredients
+          <ul>
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Eggs</li>
+          </ul>
+        </li>
+        <li>Follow steps
+          <ol>
+            <li>Mix dry ingredients</li>
+            <li>Add wet ingredients</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Media -->
+    <section class="media">
+      <h3>Images, Audio, Video</h3>
+
+      <img src="example.jpg" alt="Example image" width="300">
+
+      <p>Audio example:</p>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>Video example:</p>
+      <video controls width="420">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- Table -->
+    <section class="tables">
+      <h3>Table example</h3>
+      <table border="1" >
+        <caption>Weekly schedule</caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Topic</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td colspan="2">CSS (full day workshop)</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">Notes: schedule subject to change</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </section>
+
+    <!-- Form (comprehensive) -->
+    <section id="contact" class="forms">
+      <h3>Contact & Signup Form</h3>
+
+      <form action="/submit" method="post" enctype="multipart/form-data" novalidate>
+        <!-- fieldset + legend -->
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="fullname">Full name</label><br>
+          <input id="fullname" name="fullname" type="text" required placeholder="John Doe"><br><br>
+
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required placeholder="you@example.com"><br><br>
+
+          <label for="age">Age</label><br>
+          <input id="age" name="age" type="number" min="0" max="120"><br><br>
+
+          <label for="color">Favorite color</label><br>
+          <input id="color" name="color" type="color"><br><br>
+
+          <label for="dob">Date of birth</label><br>
+          <input id="dob" name="dob" type="date"><br><br>
+
+          <label for="avatar">Upload avatar (PNG, JPG only)</label><br>
+          <input id="avatar" name="avatar" type="file" accept=".png,.jpg,.jpeg"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>Subscribe to:</p>
+          <label for="sub-news">
+            <input id="sub-news" name="subscribe[]" type="checkbox" value="news"> News
+          </label><br>
+          <label for="sub-offers">
+            <input id="sub-offers" name="subscribe[]" type="checkbox" value="offers"> Offers
+          </label><br>
+          <label for="sub-updates">
+            <input id="sub-updates" name="subscribe[]" type="checkbox" value="updates"> Updates
+          </label><br><br>
+
+          <p>Gender:</p>
+          <label for="gender-male">
+            <input id="gender-male" name="gender" type="radio" value="male"> Male
+          </label><br>
+          <label for="gender-female">
+            <input id="gender-female" name="gender" type="radio" value="female"> Female
+          </label><br>
+          <label for="gender-other">
+            <input id="gender-other" name="gender" type="radio" value="other"> Other
+          </label><br><br>
+
+          <label for="languages">Languages known (multiple)</label><br>
+          <select id="languages" name="languages[]" multiple size="4">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select><br><br>
+
+          <label for="volume">Volume (0-100)</label><br>
+          <input id="volume" name="volume" type="range" min="0" max="100" value="50"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="message">Your message</label><br>
+          <textarea id="message" name="message" rows="5" cols="50" maxlength="1000" placeholder="Write your message..."></textarea><br><br>
+        </fieldset>
+
+        <!-- hidden, disabled -->
+        <input type="hidden" name="formId" value="signup-001">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <!-- Time & address -->
+    <section class="misc">
+      <h3>Other semantic tags</h3>
+      <p>Event time: <time datetime="2025-06-01">June 1, 2025</time></p>
+      <address>
+        Contact us at: <a href="mailto:info@example.com">info@example.com</a><br>
+        123 Example St, City
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 MySite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script >
+  </script>
+</body>
+</html>
