@@ -1,23 +1,41 @@
 <form id="form">
+  <!-- This is a form. It contains the inputs -->
+
   <fieldset>
+    <!-- A box that groups the inputs or some inputs -->
+
     <legend>Personal Information</legend>
+    <!-- Title for the group -->
 
     <!-- text input -->
     <label for="fullname">Full name</label>
-    <input type="text" id="fullname" placeholder="John Doe" required minlength="2" maxlength="100">
+    <!-- Text that tells the user what to write, the for of that label should equall the id of the input -->
 
-    <!-- email -->
+    <input type="text" id="fullname" placeholder="John Doe" required minlength="2" maxlength="100" />
+    <!-- 
+      A text box.
+      placeholder = example text.
+      required = you must type something.
+      minlength/maxlength = size limit. 
+    -->
+
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="ex@gmail.com" required>
+
+    <input type="email" id="email" name="email" placeholder="ex@gmail.com" required/>
 
     <!-- tel -->
     <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone" placeholder="+20000000000">
+
+    <input type="tel" id="phone" name="phone" placeholder="+20000000000" />
 
     <!-- password -->
     <label for="password">Password</label>
+    <!-- Label for password. -->
+
     <input type="password" id="password" name="password" minlength="8" required/>
+    <!-- minlength = at least 8 letters/numbers -->
 
     <button type="submit"> summit</button>
+    <!-- Button to send the form. -->
   </fieldset>
 </form>
